@@ -1,0 +1,204 @@
+@font-face{
+font-family: Charter;
+src: url(../fuentes/charter_regular-webfont.ttf) ;
+font-style: normal;
+    font-weight: 400;
+    }
+@font-face{
+font-family: Charter;
+src: url(../fuentes/charter_bold_italic-webfont.ttf) ;
+font-style: italic;
+font-weight: 400;
+        }
+@font-face{
+font-family: Charter;
+ src: url(../fuentes/charter_bold-webfont.ttf) ;
+ font-style: normal;
+ font-weight: bold;
+            }
+ @font-face{
+font-family: Charter;
+src: url(../fuentes/charter_bold_italic-webfont.ttf) ;
+font-style: italic;
+ font-weight: bold;
+                }
+
+
+    :root{
+    font: 16px;
+    --gris30: #212121;
+    --gris20: #212429;
+    --gris10: #616161;
+}
+html {
+    scroll-behavior: smooth;
+}
+body  {color: var(--gris30);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    /*font-family: Charter; */
+
+    }
+a{
+    color: var(--gris30);
+}
+header{
+    /*--gris10: red; */
+    font-size: 14px;
+    color: var(--gris10);
+    position: absolute;
+    top: 64px;
+   
+    width: 188px;
+    left: -232px;
+}
+header li {
+ margin-bottom: 16px;
+}
+    
+    
+header a {
+    color: var(--gris10);
+text-decoration: none;
+}
+header a:hover {
+    color: purple;
+}
+nav details summary {
+    color: #616161;
+    font-weight: bold;
+    line-height: 24px;
+}
+h1{
+    font-size: 60px;
+    font-weight: normal;
+    margin-top: 64px;
+    Margin-bottom: 16px;
+    /*width:400px ;
+    height:300px ;*/
+    /*padding: 40px;/*
+   /* border: 10px solid purple;+/
+}
+H1 + p {
+    /*margin-bottom: 64px;*/
+}
+hr{
+    margin:64px 0;
+    border-color: var(--gris10);
+}
+h2{
+    font-size: 32px;
+    margin: 64px 0px 40px;
+    font-weight: normal;
+}
+h3{
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-weight: normal;
+}
+pre {
+    background-color: #FEC62E;
+    padding: 40px;
+    font-family: 'Roboto';
+    line-height: 24px;
+}
+.hero {
+    background-image: linear-gradient(to top,rgb(255,255,255, .3),transparent), url(../imagenes/patron.png);
+    height: 350px;
+    /*background-repeat: no-repeat; */
+    /*background-position: top  right; */
+    }
+    .header {
+        position: sticky; 
+        top: 0px;
+    }
+    .header-content {
+        position: relative;
+    }
+    .main {
+        border: 1px var(--gris10);
+        /*background-color: green;*/
+        /*background-image: linear-gradient(to top,rgb(255,255,255, .3),transparent), url(../imagenes/patron.png);*/
+        
+      
+    }
+    .wrapper {
+        width: 902px;
+        margin:auto
+    }
+    .main-content{
+        /*background-color: purple;*/
+        /*padding: 20px;*/
+    }
+/*.debug {
+    border: 10px solid cornflowerblue;
+    box-shadow: 0px 0px 0px 2px purple;
+}*/
+
+    .section-content + hr {
+        display: none;
+    }
+    .section-content:first-of-type{
+        margin-top: 0;
+    } 
+    .section-content {
+        margin-top: 164px;
+    }
+    .section-content img {
+        margin-top: 40px;
+    }
+    .section-content ol li {
+        line-height: 24px;
+    }
+    .section-content ul li {
+        margin-bottom: 16px;
+    } 
+    .section-content{
+        counter-reset: tittlelist;
+    }
+
+    .section-content h3{
+        counter-increment: tittlelist;
+        /*background-color: red;*/
+        padding-bottom: 8px;
+    }
+    .section-content h3::before {
+    content: counter(tittlelist, decimal) ". ";
+}
+.section-content h3::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: var(--gris30);
+   /* display:inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;*/
+    
+}
+blockquote {
+    margin: 32px 0px;
+    padding-left: 16px;
+    line-height: 24px;
+    font-size: 24px;
+    /*border: 10px solid var(--gris10);*/
+   /* border-top-color: purple;*/
+    /*border-top-style:dashed;*/
+    /*border-radius: 50px;
+    /*border-top: 10px solid red*/
+    border-left: 4px solid var(--gris30);
+}
+blockquote span::before{
+    color: var(--gris10);
+}
+blockquote span::before {
+    content: '-';
+}
+
+
+
+
+/*::selection {
+    background: PURPLE;
+}*/
